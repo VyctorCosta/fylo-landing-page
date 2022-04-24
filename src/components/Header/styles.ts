@@ -4,7 +4,7 @@ export const Background = styled.div`
   background-color: ${({ theme }) => theme.Colors.Primary.initialBackground};
 `;
 
-export const Container = styled.div`
+export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;

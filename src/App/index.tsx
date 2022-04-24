@@ -3,8 +3,10 @@ import { ThemeProvider } from "styled-components";
 import theme from "../themes/main";
 import GlobalStyle from "../styles/GlobalStyle";
 import Header from "../components/Header";
-import { DivImgCurvy, ImgCurvy } from "./styles";
 import Intro from "../components/Intro";
+import AboutUs from "../components/AboutUs";
+import Illustration from "../components/Illustration";
+import { DivImgCurvy, ImgCurvy } from "./styles";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <ImgCurvy src="img/bg-curvy-desktop.svg" />
       </DivImgCurvy>
       <Intro />
+      <AboutUs />
+      <Illustration />
     </ThemeProvider>
   );
 }

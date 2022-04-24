@@ -6,7 +6,7 @@ const theme: DefaultTheme = {
       emailBackground: "hsl(217, 28%, 15%)",
       footerBackground: "hsl(216, 53%, 9%)",
       initialBackground: "hsl(222, 26.3%, 14.9%)",
-      mainBackground: "hsl(218, 28%, 13%)",
+      mainBackground: "hsl(218, 28.4%, 13.1%)",
       testimonialsBackground: "hsl(219, 30%, 18%)",
     },
     Accent: {
