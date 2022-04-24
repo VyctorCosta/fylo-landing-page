@@ -19,7 +19,7 @@ const theme: DefaultTheme = {
   },
   Typography: {
     Body: {
-      fontSize: "14px",
+      fontSize: "1.4rem",
       fontFamily: "'Open Sans', sans-serif",
       fontWeightRegular: 400,
       fontWeightBold: 700,

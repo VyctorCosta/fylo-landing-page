@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
@@ -26,8 +27,14 @@ const GlobalStyle = createGlobalStyle`
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
+  html {
+    font-size: 62.5%;
+  }
   body {
     line-height: 1;
+    background-color: ${({ theme }) => theme.Colors.Primary.mainBackground};
+    font-size: ${({ theme }) => theme.Typography.Body.fontSize};
+    font-family: ${({ theme }) => theme.Typography.Body.fontFamily};
   }
   ol, ul {
     list-style: none;
