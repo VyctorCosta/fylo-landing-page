@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     line-height: 1;
-    background-color: ${({ theme }) => theme.Colors.Primary.mainBackground};
+    background-color: ${({ theme }) => theme.Colors.Primary.initialBackground};
     font-size: ${({ theme }) => theme.Typography.Body.fontSize};
     font-family: ${({ theme }) => theme.Typography.Body.fontFamily};
   }

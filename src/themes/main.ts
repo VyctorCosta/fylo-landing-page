@@ -5,11 +5,13 @@ const theme: DefaultTheme = {
     Primary: {
       emailBackground: "hsl(217, 28%, 15%)",
       footerBackground: "hsl(216, 53%, 9%)",
+      initialBackground: "hsl(222, 26.3%, 14.9%)",
       mainBackground: "hsl(218, 28%, 13%)",
       testimonialsBackground: "hsl(219, 30%, 18%)",
     },
     Accent: {
-      cyan: "hsl(176, 68%, 64%)",
+      // hsl(176, 68%, 64%)
+      cyan: "hsl(191, 59%, 50%)",
       blue: "hsl(198, 60%, 50%)",
       lightRed: "hsl(0, 100%, 63%)",
     },

@@ -6,6 +6,7 @@ declare module "styled-components" {
       Primary: {
         emailBackground: string;
         footerBackground: string;
+        initialBackground: string;
         mainBackground: string;
         testimonialsBackground: string;
       };

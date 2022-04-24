@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
+export const Background = styled.div`
+  background-color: ${({ theme }) => theme.Colors.Primary.initialBackground};
+`;
+
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 144rem;
   min-height: 10rem;
   font-family: ${({ theme }) => theme.Typography.Headings.fontFamily};
-  margin: 5rem;
-  /* background-color: red; */
+  margin: 0 auto;
+  padding: 5rem 5rem;
 
   .Logo {
     width: 17.6rem;
@@ -17,11 +22,13 @@ export const Container = styled.div`
 
 export const Menu = styled.div`
   display: flex;
-  gap: 3rem;
+  gap: 7rem;
 `;
 
 export const Text = styled.h2`
   color: ${({ theme }) => theme.Colors.Neutral.white};
+  font-family: ${({ theme }) => theme.Typography.Body.fontFamily};
+  font-size: 1.6rem;
   :hover {
     text-decoration: underline;
     cursor: pointer;
