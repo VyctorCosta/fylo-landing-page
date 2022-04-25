@@ -5,7 +5,6 @@ export const Background = styled.div`
   background-color: ${({ theme }) => theme.Colors.Primary.mainBackground};
   margin: 0 auto;
   padding: 0 28rem;
-  margin-bottom: 40rem;
 `;
 
 export const Container = styled.div`
@@ -18,6 +17,9 @@ export const Container = styled.div`
   font-family: ${({ theme }) => theme.Typography.Headings.fontFamily};
   padding: 4.5rem 3rem;
   box-shadow: 0.5rem 0.6rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  position: relative;
+  top: 12rem;
 
   h2 {
     font-size: 3rem;

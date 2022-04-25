@@ -8,6 +8,7 @@ import AboutUs from "../components/AboutUs";
 import Illustration from "../components/Illustration";
 import Cards from "../components/Cards";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import { DivImgCurvy, ImgCurvy } from "./styles";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Cards />
         <Contact />
       </main>
+      <Footer />
     </ThemeProvider>
   );
 }
