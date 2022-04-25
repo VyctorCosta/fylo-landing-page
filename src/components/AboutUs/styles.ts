@@ -11,7 +11,7 @@ export const DivInfos = styled.div`
   max-width: 84rem;
   min-height: 40rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 15rem;
   margin: 0 auto;
   padding: 0 2.5rem;
