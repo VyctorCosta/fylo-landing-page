@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const Background = styled.div`
+  @media (max-width: 900px) {
+    width: 100%;
+    background-color: ${({ theme }) => theme.Colors.Primary.mainBackground};
+  }
+`;
+
 export const Container = styled.div`
   max-width: 144rem;
   display: flex;
@@ -8,11 +15,17 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 14rem 4rem;
   background-color: ${({ theme }) => theme.Colors.Primary.mainBackground};
+
+  @media (max-width: 900px) {
+    gap: 2rem;
+    max-width: 37.5rem;
+    flex-direction: column;
+    padding-bottom: 10rem;
+  }
 `;
 
 export const IllustrationImg = styled.img`
   width: 100%;
-  /* height: 150%; */
 `;
 
 export const DivContent = styled.div`
@@ -20,13 +33,21 @@ export const DivContent = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  min-height: 46.5rem;
   color: ${({ theme }) => theme.Colors.Neutral.white};
 
   p {
     font-size: 1.6rem;
     line-height: 2.5rem;
     font-family: ${({ theme }) => theme.Typography.Headings.fontFamily};
+  }
+
+  @media (max-width: 900px) {
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-bottom: 0;
+    p {
+      font-size: 1.4rem;
+    }
   }
 `;
 
@@ -36,6 +57,10 @@ export const Title = styled.h2`
   font-family: ${({ theme }) => theme.Typography.Headings.fontFamily};
   max-width: 46rem;
   line-height: 5.5rem;
+
+  @media (max-width: 900px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const Link = styled.h2`
@@ -56,5 +81,8 @@ export const Link = styled.h2`
     img {
       filter: sepia(100%);
     }
+  }
+
+  @media (max-width: 900px) {
   }
 `;

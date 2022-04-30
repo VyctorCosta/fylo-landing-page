@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Title, Paragraph, Button } from "./styles";
+import { Container, DivButton, Title, Paragraph, Button } from "./styles";
 
 export default function Intro() {
   return (
@@ -15,7 +15,9 @@ export default function Intro() {
         <br />
         Access them wherever you need, share and collaborate with friend family, and co-workers
       </Paragraph>
-      <Button>Get Started</Button>
+      <DivButton>
+        <Button>Get Started</Button>
+      </DivButton>
     </Container>
   );
 }

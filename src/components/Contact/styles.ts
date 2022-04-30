@@ -1,16 +1,24 @@
 import styled from "styled-components";
 
 export const Background = styled.div`
+  display: flex;
   max-width: 144rem;
   background-color: ${({ theme }) => theme.Colors.Primary.mainBackground};
   margin: 0 auto;
-  padding: 0 28rem;
+  padding: 0 20%;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    padding: 0 10%;
+    justify-content: center;
+  }
 `;
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 70rem;
   gap: 3rem;
   background-color: ${({ theme }) => theme.Colors.Primary.emailBackground};
   color: ${({ theme }) => theme.Colors.Neutral.white};
@@ -32,6 +40,19 @@ export const Container = styled.div`
     font-weight: 500;
     text-align: center;
   }
+
+  @media (max-width: 900px) {
+    max-width: 29.5rem;
+    min-width: 0;
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      line-height: 2rem;
+    }
+  }
 `;
 
 export const DivInput = styled.div`
@@ -50,6 +71,13 @@ export const DivInput = styled.div`
 
     ::placeholder {
       color: hsl(232, 10%, 61%);
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding-left: 2rem;
+    input {
+      font-size: 1.2rem;
     }
   }
 `;
@@ -74,6 +102,14 @@ export const DivEmail = styled.div`
 
     :hover {
       background-color: ${({ theme }) => theme.Colors.Accent.cyan};
+    }
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+
+    button {
+      min-height: 5rem;
     }
   }
 `;

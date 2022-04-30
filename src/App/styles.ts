@@ -6,6 +6,10 @@ export const DivImgCurvy = styled.div`
   z-index: -1;
   top: 79rem;
   left: calc(50% - 72rem);
+
+  @media (max-width: 900px) {
+    top: 31rem;
+  }
 `;
 
 export const ImgCurvy = styled.img`

@@ -17,6 +17,15 @@ export const Container = styled.div`
     font-weight: 500;
     line-height: 2.4rem;
   }
+
+  @media (max-width: 900px) {
+    max-width: 29.5rem;
+    margin: 0;
+
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 export const DivPerson = styled.div`

@@ -9,7 +9,6 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   max-width: 144rem;
-  min-height: 10rem;
   font-family: ${({ theme }) => theme.Typography.Headings.fontFamily};
   margin: 0 auto;
   padding: 5rem 5rem;
@@ -18,11 +17,27 @@ export const Container = styled.header`
     width: 17.6rem;
     height: 5.2rem;
   }
+
+  @media (max-width: 900px) {
+    max-width: 37.5rem;
+    align-items: center;
+    padding: 5rem 1.5rem;
+
+    .Logo {
+      width: 10rem;
+      height: 3rem;
+    }
+  }
 `;
 
 export const Menu = styled.div`
   display: flex;
+  align-items: center;
   gap: 7rem;
+
+  @media (max-width: 900px) {
+    gap: 2rem;
+  }
 `;
 
 export const Text = styled.h2`
@@ -34,5 +49,9 @@ export const Text = styled.h2`
     cursor: pointer;
     user-select: none;
     transform: scale(1.1);
+  }
+
+  @media (max-width: 900px) {
+    font-size: 1.4rem;
   }
 `;

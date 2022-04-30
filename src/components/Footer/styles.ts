@@ -18,12 +18,26 @@ export const Container = styled.div`
   .Logo {
     margin-bottom: 3rem;
   }
+
+  @media (max-width: 900px) {
+    max-width: 32rem;
+    padding-left: 4rem;
+
+    .Logo {
+      padding-left: 1rem;
+    }
+  }
 `;
 
 export const DivInfo = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 5rem;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 4rem;
+  }
 `;
 
 export const Location = styled.div`
@@ -39,6 +53,10 @@ export const Location = styled.div`
   p {
     max-width: 42rem;
   }
+
+  @media (max-width: 900px) {
+    max-height: 100%;
+  }
 `;
 
 export const DivContact = styled.div`
@@ -46,6 +64,10 @@ export const DivContact = styled.div`
   flex-direction: column;
   gap: 2rem;
   max-height: 6rem;
+
+  @media (max-width: 900px) {
+    gap: 3rem;
+  }
 `;
 
 export const Contact = styled.div`
@@ -70,6 +92,10 @@ export const DivChoices = styled.div`
       font-weight: 700;
     }
   }
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const DivIcons = styled.div`
@@ -77,4 +103,8 @@ export const DivIcons = styled.div`
   max-width: 10rem;
   gap: 2rem;
   align-items: flex-start;
+
+  @media (max-width: 900px) {
+    margin: 0 auto;
+  }
 `;
