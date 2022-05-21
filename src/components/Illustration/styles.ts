@@ -25,7 +25,11 @@ export const Container = styled.div`
 `;
 
 export const IllustrationImg = styled.img`
-  width: 100%;
+  width: auto;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 export const DivContent = styled.div`
